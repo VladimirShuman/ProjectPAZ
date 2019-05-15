@@ -48,14 +48,32 @@ footer {
 .header-show-right-img{
 		margin-top:30px;
 }
-.header-show-left { display: flex; flex-direction:column;
-		height:100%; width:740px;margin-right:auto;
+.header-show-left {
+	display: flex; 
+	flex-direction:column;
+	width:740px;
+	height:100%; 
+	margin-right:auto;
 }
-.header-show-left-search{display: flex; flex-direction:row;
+.header-show-left-helping{
+	display: flex;
 	justify-content:flex-end;
-  height:50px; width:100%; margin-top:10px; 
+	padding-top: 20px;
 }
-.header-show-left-menu{display: flex; flex-direction:row;
+.header-show-left-helping-search {
+	display: flex;
+	justify-content:flex-end;
+	background-image: url("images/search_input.png");
+
+	height:20px;
+}
+.header-show-left-helping-language a {
+  padding-left:30px;
+	color: white;
+}
+.header-show-left-menu{
+	              border: 2px solid red;
+display: flex; flex-direction:row;
 		justify-content:flex-end; 
 	height:50px; width:100%; margin:20px 0px 10px 0px; 
 /**/
