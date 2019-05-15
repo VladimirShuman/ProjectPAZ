@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "IndieFlower";
+    src: url("fonts/IndieFlower.ttf");   
+}
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+	  direction: rtl;
+    text-align: right;
+}
+/**/
+body{ display: flex; flex-direction:column;
+   height:720px; width:1280px;
+}
+header{ display: flex; flex-direction:row;
+   background: url("images/header_bg.png");
+	 background-size: 100%;  
+   height:80px; width:100%;
+}
+main{ display: flex; flex-direction:column;
+                                    border: 1px solid blue;
+	height:610px; width:900px; margin: 0 auto;
+}
+footer { display: flex; flex-direction:row;
+         border:2px solid red;
+  height:30px;
+}
+
+/**** header ****/
+.header-show { display: flex; flex-direction:row;
+	height:100%; width:900px; margin: auto;
+}
+.header-show-right { display: flex; flex-direction:column;
+	height:100%;
+	
+/*width:160px;*/
+}
+.header-show-right-img{
+		margin-top:10px;
+}
+.header-show-left { display: flex; flex-direction:column;
+		height:100%; width:740px;margin-right:auto;
+}
+.header-show-left-search{display: flex; flex-direction:row;
+	justify-content:flex-end;
+  height:50px; width:100%; margin-top:10px; 
+}
+.header-show-left-menu{display: flex; flex-direction:row;
+		justify-content:flex-end; 
+	height:50px; width:100%; margin:20px 0px 10px 0px; 
+/**/
+}
+/******** main ********/
+.main-top{display: flex; flex-direction:row;
+   height:340px; width:100%; margin-top:16px;
+}
+.main-top-common{ display: flex; position: relative;
+	background-size:100%;
+  height:100%; width:33.333%;
+}
+.main-top-common-read{ display: flex; position: absolute;
+	top:238px; margin-right:6px;
+}
+.main-top-common-txtpanel{ display:flex;  flex-direction:column; position: absolute;
+	top:0px; left:0px;
+	height:100%;
+	pagging: 0px 4px 4px 0px;
+}
+.main-top-common-txtpanel-txt{
+	color: white; font-size:12px;
+}
+.main-top-common-txtpanel-more{display:flex;
+	margin-top: auto;margin-right: auto;
+}
+.main-top-common-txtpanel-more-txt{display:inline;  
+	width:50px;
+	color: white; font-size:12px;
+}
+.main-top-common-txtpanel-more-pict{display:inline;  
+	padding:0px 4px 0px 6px; 
+}
+.main-top-right{ 
+	background-image: url("images/1908364606615453350.JPG");
+	margin-left:8px;
+}
+.main-top-middle{
+	background-image: url("images/Picture-046410251500.JPG");
+	margin-left:4px; margin-right:4px;
+}
+.main-top-left{
+	background-image: url("images/291_354410564000.JPG");
+	margin-right:8px;
+}
+
+
+.main-bottom{display: flex; flex-direction:row;
+																border:2px solid green;
+  height:33.333%; width:100%;
+}
+.main-bottom-right{
+						border:4px solid black;
+  height:100%;
+  width:33.333%;
+}
+.main-bottom-middle{
+						border:4px solid black;
+  height:100%;
+  width:33.333%;
+}
+.main-bottom-left{
+											border:4px solid black;
+  height:100%;
+  width:33.333%;
+}
+
+
