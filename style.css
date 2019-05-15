@@ -63,9 +63,11 @@ footer {
 .header-show-left-helping-search {
 	display: flex;
 	justify-content:flex-end;
-	background-image: url("images/search_input.png");
-
 	height:20px;
+}
+.header-show-left-helping-search-text {
+	background-image: url("images/search_input.png");
+	background-size: 100%;
 }
 .header-show-left-helping-language a {
   padding-left:30px;
@@ -120,12 +122,12 @@ display: flex; flex-direction:row;
 }
 
 /*************************
-*******/
+*************************/
 
 .main-bottom{
 	display: flex; 
 	flex-direction:row;
-	height:240px; 
+	height:218px; 
 	width:100%; 
 	margin-top:16px; 
 	margin-bottom:16px;
