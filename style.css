@@ -28,8 +28,8 @@ main{
 footer { 
 	display: flex;
 	position: fixed;
+	background: url("images/footer_bg.png");
 	bottom:0px;
-							border:8px solid red;
 	width:100%;
   height:38px;
 }
@@ -198,6 +198,14 @@ li.active a{
 	 display:block;
 }
 
+.nav-item:hover li a 
+{
+	 color:rgb(3, 71, 194);
+	 text-decoration: underline;}
+.header-show-left-helping-language:hover a{
+	 color:rgb(3, 71, 194);
+	 text-decoration: underline;	
+}
 .dropdown-list {
 	background-image: url("images/menu_dropdown_bg.png");
 	background-size: 100%;
