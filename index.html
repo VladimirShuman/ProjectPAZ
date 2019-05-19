@@ -5,11 +5,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=divice-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>PAZ Home Page פז - עמוד הבית</title>
+	<title>PAZ - פז - עמוד הבית</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	<style>	
+	</style>
 </head>
 
-<body>
+<body onload="onclickHome()">
 	<!---->
 	<header>
 		<!--row-->
@@ -46,15 +49,12 @@
 						<ul>
 							<div class="nav-item header-show-left-menu-nav-imagehome">
 								<li>
-									<a href="#"> <img src="images/menu_home_blue.png">
-										<img src="images/menu_sep.png">
-									</a>
+									<a href="#"> <img src="images/menu_home_blue.png"> </a>
 								</li>
 							</div>
 							<div class="nav-item">
 								<li>
-									<a href="#"> אודות </a>
-									<img src="images/menu_sep.png">
+									<a href="#"> <span class="sep-vert" >| </span> אודות </a>
 								</li>
 								<div class="dropdown-list">
 									<a href="#"> אודות</a>
@@ -68,8 +68,7 @@
 							</div>
 							<div class="nav-item">
 								<li>
-									<a href="#"> חתיבות</a>
-									<img src="images/menu_sep.png">
+									<a href="#"> <span class="sep-vert" >| </span> חתיבות </a>
 								</li>
 								<div class="dropdown-list">
 									<a href="#"> חטיבות</a>
@@ -80,8 +79,7 @@
 							</div>
 							<div class="nav-item">
 								<li>
-									<a href="#"> אחריות תאגידים</a>
-									<img src="images/menu_sep.png">
+									<a href="#"> <span class="sep-vert" >| </span> אחריות תאגידים </a>
 								</li>
 								<div class="dropdown-list">
 									<a href="#"> אחריות תאגידים</a>
@@ -93,8 +91,7 @@
 							</div>
 							<div class="nav-item">
 								<li>
-									<a href="#">קשרי משקיעים</a>
-									<img src="images/menu_sep.png">
+									<a href="#"> <span class="sep-vert" >| </span> קשרי משקיעים </a>
 								</li>
 								<div class="dropdown-list">
 									<a href="#"> פרופיל חברה </a>
@@ -107,8 +104,7 @@
 							</div>
 							<div class="nav-item">
 								<li>
-									<a href="#"> תחנות שלנו</a>
-									<img src="images/menu_sep.png">
+									<a href="#"> <span class="sep-vert" >| </span> תחנות שלנו </a>
 								</li>
 								<div class="dropdown-list">
 									<a href="#"> תחנות שלנו </a>
@@ -119,8 +115,7 @@
 							</div>
 							<div class="nav-item">
 								<li>
-									<a href="#"> קריירה </a>
-									<img src="images/menu_sep.png">
+									<a href="#"> <span class="sep-vert" >| </span> קריירה </a>
 								</li>
 								<div class="dropdown-list">
 									<a href="#"> לעבוד בפז </a>
@@ -128,9 +123,9 @@
 									<a href="#"> קריירה </a>
 								</div>
 							</div>
-							<div class="active nav-item">
+							<div class="nav-item">
 								<li>
-									<a href="#"> חדשות ומדיה </a>
+									<a href="#"> <span class="sep-vert" >| </span> חדשות ומדיה </a>
 								</li>
 								<div class="dropdown-list">
 									<a href="#"> פרסומות </a>
@@ -139,21 +134,7 @@
 							</div>
 
 							<!--			
-			
-							<div class="nav-item">
-								<li> <a href="#"> צור קשר</a></li>
-								<div class="dropdown-list">
-										<a href="#"> </a>
-										<a href="#"> </a>
-										<a href="#"> </a>
-										<a href="#"> </a>
-										<a href="#"> </a>
-										<a href="#"> </a>
-										<a href="#"> </a>
-										<a href="#"> </a>
-									</div>
-							</div>
-
+	
 						-->
 
 						</ul>
@@ -168,6 +149,86 @@
 	</header>
 	<!---->
 	<main>
+	<div class="main-page" id="main-page-connect">
+		<div class="connect-c1">
+			<div class="connect-c1-r1">
+					<a href="#">צור קשר </a>
+			</div>
+		</div>
+		<div class="connect-c2">
+			<div class="connect-c2-r1">
+				<a href="#"> עמוד הבי > </a>
+						צור קשר 			
+				</div>	
+			<div class="connect-c2-r2">
+									צור קשר 	
+			</div>
+			<div class="connect-c2-r3">
+			</div>
+			<div class="connect-c2-r4">
+				<div class="connect-c2-r4-r1">
+						צור קשר
+				</div>
+				<div class="connect-c2-r4-r2">
+					ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו 
+					<br>
+					נשמח לעמוד לרשותכם :
+					<br>
+					* השדות המסומנים בכוכבית (*) הינם שדות חובה
+				</div>
+				<form class="connect-c2-r4-r3">
+					<label for="connect-c2-r4-r3-i1" >* שם פרטי</label>
+					<input type="text" id="connect-c2-r4-r3-i1">
+					<br>
+					<label for="connect-c2-r4-r3-i2">* שם משפחה</label>
+					<input type="text" id="connect-c2-r4-r3-i2">
+					<label for="connect-c2-r4-r3-i3">* טלפון</label>
+					<input type="text" id="connect-c2-r4-r3-i3">
+					<label for="connect-c2-r4-r3-i4">* E-mail</label>
+					<input type="email" id="connect-c2-r4-r3-i4">
+					<textarea rows="3" cols="20" id="connect-c2-r4-r3-i5">
+					</textarea>
+					<button type="submit" id="connect-c2-r4-r3-i6"> שלח</button>
+				</form>
+			</div>
+		</div>
+		<div class="connect-c3">
+			<div class="connect-c3-r1">
+				<div class="connect-c3-r1-r1">
+						פרטי יצירת קשר
+				</div>
+				<div class="connect-c3-r1-r2">
+				</div>
+				<div class="connect-c3-r1-r3">
+					פז חברת נפט בע"מ 
+					<br>
+					יורו פארק, בניין הולנד
+					<br>
+					קיבוץ יקום 60972
+					<br>
+					טל. שירות לקוחות 1-800-774-774
+					<br>
+					פקס.09-8641714
+										</div>
+			</div>
+			<div class="connect-c3-r2">
+				<div class="connect-c3-r2-r1">
+					עוד בפז
+				</div>
+				<div class="connect-c3-r2-r2">
+				</div>
+				<div class="connect-c3-r2-r3">
+					ליצירת קשר עם דוברות פז
+				</div>
+				<a  class="connect-c3-r2-r4" href="#"> לחצו כאן>> </a>
+				<div class="connect-c3-r2-r5">
+				רוצים לעבוד בפז?
+				</div>
+				<a  class="connect-c3-r2-r6" href="#"> לחצו כאן>> </a>
+			</div>
+		</div>
+	</div>
+	<div class="main-page" id="main-page-home">
 		<!--column-->
 		<div class="main-top">
 			<!--row-->
@@ -254,7 +315,12 @@
 					</div>
 					<img src="images/paz_250x110059890678.jpg">
 					<div class="main-bottom-common-read-more">
-
+							<a href="#">
+								<div class="main-bottom-common-txtpanel-more-txt">
+										לפרטים נוספים
+								</div>
+								<img class="main-top-common-txtpanel-more-pict" src="images/read_more_yellow.png">
+							</a>
 					</div>
 					<!--main-bottom-common-read-more-->
 				</div>
@@ -270,7 +336,12 @@
 					</div>
 					<img src="images/250X110571325734.jpg">
 					<div class="main-bottom-common-read-more">
-
+							<a href="#">
+								<div class="main-bottom-common-txtpanel-more-txt">
+										לפרטים נוספים
+								</div>
+								<img class="main-top-common-txtpanel-more-pict" src="images/read_more_yellow.png">
+							</a>
 					</div>
 					<!--main-bottom-common-read-more-->
 				</div>
@@ -284,9 +355,46 @@
 					<div class="main-bottom-common-title">
 						התחנות שלנו בדרך שלך
 					</div>
-					<img src="images/Untitled-3058756287.jpg">
-					<div class="main-bottom-common-read-more">
-
+					<div class="main-bottom-map-area">
+					  <div class="main-bottom-map-area-menu">
+							<nav class="main-bottom-map-area-menu-nav">
+								<ul>
+									<div class="nav-item">
+										<li>
+											<a href="#">
+												<div class="main-bottom-map-area-menu-nav-go">
+														צפון
+												</div>
+												<img class="main-bottom-common-txtpanel-more-pict" src="images/read_more_yellow.png">
+											</a>
+										</li>
+									</div>
+									<div class="nav-item">
+										<li>
+											<a href="#">
+												<div class="main-bottom-map-area-menu-nav-go">
+														מרכז
+												</div>
+												<img class="main-bottom-common-txtpanel-more-pict" src="images/read_more_yellow.png">
+											</a>
+										</li>
+									</div>
+									<div class="nav-item">
+										<li>
+											<a href="#">
+												<div class="main-bottom-map-area-menu-nav-go">
+														דרום
+												</div>
+												<img class="main-bottom-common-txtpanel-more-pict" src="images/read_more_yellow.png">
+											</a>
+										</li>
+									</div>
+								</ul>
+							</nav>
+						</div>
+						<div class="main-bottom-map-area-map">
+							<img src="images/Untitled-3058756287.jpg">
+						</div>
 					</div>
 					<!--main-bottom-common-read-more-->
 				</div>
@@ -296,78 +404,84 @@
 		</div>
 		<!--main-bottom-->
 
+	</div>
 	</main>
 
 	<footer>
-
-
 		<div class="footer-menu">
 			<nav class="footer-menu-nav">
-				<ul>
-					<div class="nav-item footer-menu-nav-imagefb">
-						<li>
-							<a href="#"> <img src="images/fb_icon.png">
-								<img src="images/menu_sep.png">
-							</a>
-						</li>
-					</div>
-					<div class="nav-item">
-						<li>
-							<a href="#"> אודות </a>
-							<img src="images/menu_sep.png">
-						</li>
-					</div>
-					<div class="nav-item">
-						<li>
-							<a href="#"> חתיבות</a>
-							<img src="images/menu_sep.png">
-						</li>
-					</div>
-					<div class="nav-item">
-						<li>
-							<a href="#"> אחריות תאגידים</a>
-							<img src="images/menu_sep.png">
-						</li>
-					</div>
-					<div class="nav-item">
-						<li>
-							<a href="#">קשרי משקיעים</a>
-							<img src="images/menu_sep.png">
-						</li>
-					</div>
-					<div class="nav-item">
-						<li>
-							<a href="#"> תחנות שלנו</a>
-							<img src="images/menu_sep.png">
-						</li>
-					</div>
-					<div class="nav-item">
-						<li>
-							<a href="#"> קריירה </a>
-							<img src="images/menu_sep.png">
-						</li>
-					</div>
-					<div class="active nav-item">
-						<li>
-							<a href="#"> חדשות ומדיה </a>
-						</li>
-					</div>
+			<ul>
+				<div class="nav-item footer-menu-nav-imagefb">
+					<li>
+						<a href="#"> <img src="images/fb_icon.png">	</a>
+					</li>
+				</div>
+				<div class="nav-item">
+					<li>
+						<a href="#" onclick="onclickHome()" > <span class="sep-vert" >| </span> עמוד הבית </a>
+					</li>
+				</div>
+				<div class="nav-item">
+				  <li>
+						<a href="#"> <span class="sep-vert" >| </span> מחירונים </a>
+					</li>
+				</div>
+				<div class="nav-item">
+					<li>
+						<a href="#"> <span class="sep-vert" >| </span> קריירה </a>
+					</li>
+				</div>
+				<div class="nav-item">
+					<li>
+						<a href="#"> <span class="sep-vert" >| </span> תנאי שימוש </a>
+					</li>
+				</div>
+				<div class="nav-item">
+					<li>
+						<a href="#"> <span class="sep-vert" >| </span>  נגישות </a>
+					</li>
+				</div>
+				<div class="nav-item">
+					<li>
+						<a href="#"> <span class="sep-vert" >| </span> מפת אתר </a>
+					</li>
+				</div>
+				<div class="nav-item">
+					<li onclick="onclickContact()">
+						<a href="#"> <span class="sep-vert" >| </span> צור קשר</a>
+					</li>
+				</div>
+				<div class="nav-item">
+					<li>
+						<a href="#"> <span class="sep-vert" >| </span> שטחי מסחר </a>
+					</li>
+				</div>
+				<div class="nav-item">
+					<li>
+						<a href="#"> <span class="sep-vert" >| </span> הסדר פשרה בתובענה הייצוגית בעניין הסדר פזומט </a>
+					</li>
+				</div>
+					<!--
 
-					<!--			
-		
-						<div class="nav-item">
-							<li> <a href="#"> צור קשר</a></li>
-						</div>
-
-					-->
-
-				</ul>
+						-->
+						</ul>
 			</nav>
-
-			</div>
-			<!--footer-menu-->
+			<!--nav-->
+	</div>
+	<!--footer-menu-->
 
 	</footer>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
